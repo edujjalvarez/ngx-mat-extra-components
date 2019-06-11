@@ -83,6 +83,9 @@ export class NgxMatExtraDatepickerComponent implements OnInit, OnChanges, OnDest
                     this.yourFormGroup.get(this.yourFormControlName).setValue(date.toDate());
                 }
             }
+            if (!value) {
+                this.yourFormGroup.get(this.yourFormControlName).setValue(null);
+            }
         });
     }
 
