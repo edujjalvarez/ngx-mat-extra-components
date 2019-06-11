@@ -5,12 +5,12 @@
 	"author": "Eduardo Juan José Alvarez (edujjalvarez@gmail.com)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mrsan22/NgxMatTypeahead.git"
+		"url": "https://github.com/edujjalvarez/ngx-mat-extra-components.git"
 	},
 	"bugs": {
-		"url": "https://github.com/mrsan22/NgxMatTypeahead/issues"
+		"url": "https://github.com/edujjalvarez/ngx-mat-extra-components/issues"
 	},
-	"homepage": "https://github.com/mrsan22/NgxMatTypeahead",
+	"homepage": "https://github.com/edujjalvarez/ngx-mat-extra-components",
 	"keywords": [
 		"angular",
 		"typescript",
