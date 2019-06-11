@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, OnDestroy, ViewChild, Input } from '@angular/core';
 import { MatDatepicker, MatDatepickerInputEvent } from '@angular/material';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import * as moment_ from 'moment';
 const moment = moment_;
@@ -68,7 +68,7 @@ export class NgxMatExtraDatepickerComponent implements OnInit, OnChanges, OnDest
                 formattedDate = date.format('DD/MM/YYYY');
             }
         }
-        const validators = this.yourFormGroup.get(this.yourFormControlName).validator(this.yourFormGroup.get(this.yourFormControlName));
+        const validators = this.yourFormGroup.get(this.yourFormControlName).validator({} as AbstractControl);
         console.log('VALIDATORSSSSSSSSSSSSSSSSSSSSSSS', validators);
         const formControl = validators.required ? new FormControl(formattedDate, [Validators.required, Validators.pattern(DATE_REGEXP)]) : new FormControl(formattedDate, Validators.pattern(DATE_REGEXP));
         this.yourFormGroup.addControl('DisplayDate', formControl);
