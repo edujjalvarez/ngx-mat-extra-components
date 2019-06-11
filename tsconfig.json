@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-mat-extra-components": [
+        "dist/ngx-mat-extra-components"
+      ],
+      "ngx-mat-extra-components/*": [
+        "dist/ngx-mat-extra-components/*"
+      ]
+    }
   }
 }

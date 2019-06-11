@@ -1,0 +1,28 @@
+{
+	"name": "ngx-mat-extra-components",
+	"version": "1.0.0",
+	"description": "Set of extra angular material components.",
+	"author": "Eduardo Juan José Alvarez (edujjalvarez@gmail.com)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrsan22/NgxMatTypeahead.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mrsan22/NgxMatTypeahead/issues"
+	},
+	"homepage": "https://github.com/mrsan22/NgxMatTypeahead",
+	"keywords": [
+		"angular",
+		"typescript",
+		"datepicker",
+		"angular-material",
+		"phone-number",
+		"gallery",
+		"cropper"
+	],
+	"license": "MIT",
+	"peerDependencies": {
+		"@angular/common": "^7.1.0",
+		"@angular/core": "^7.1.0"
+	}
+}
